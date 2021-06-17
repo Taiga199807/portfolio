@@ -74,7 +74,7 @@ li {
   
   float: right;
   top: auto;
-  width: 770px;
+  width: 758px;
   height: auto;
 }
 .top_subtitle {
@@ -104,8 +104,7 @@ li {
     z-index: 0;
     display: inline-block;
     white-space: nowrap;
-    color: #CCCCCC; /* グレーカラー 自由に設定化 */
-    /*font-size: 30px; フォントサイズ 自由に設定化 */
+    color: #CCCCCC; 
 }
 
 .star5_rating:before, .star5_rating:after{
@@ -120,23 +119,20 @@ li {
   left: 0;
   overflow: hidden;
   white-space: nowrap;
-  color: #ffcf32; /* イエローカラー 自由に設定化 */
+  color: #ffcf32; 
   height: 30px;
 }
 .star5_rating[data-rate="2.5"]:after{ width: 50%; }
 
 .star5_rating[data-rate="3"]:after{ width: 60%; }
-.star5_rating[data-rate="4"]:after{ width: 80%; 
-
-} /* 星4 */
-
+.star5_rating[data-rate="4"]:after{ width: 80%; } 
 
 .inner {
-  margin-top: -100px;
+  
   padding-top: 100px;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 20px 40px 110px 40px;
 }
 .profile {
   float: left;
@@ -146,8 +142,11 @@ li {
   font-size: 60px;
   font-weight: bold;
   letter-spacing: 5px;
-  color: #555;
-  margin-bottom: 30px;
+  color: rgb(255, 93, 93);
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  column-gap: normal;
 }
 .profile1 {
   font-size: 25px;
@@ -233,6 +232,9 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.insta_contact{
+  width: 23%;
 }
 .contact_list li {
   list-style: none;
