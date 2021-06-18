@@ -17,6 +17,7 @@ li {
   list-style: none;
 }
 .nav_all {
+  z-index: 500;
   width: 100%;
   position: fixed;
   background-color: #fff;
@@ -43,6 +44,7 @@ li {
 }
 
 .top {
+  max-width: 100%;
   height: 900px;
   background-color: rgb(255, 255, 255);
 }
@@ -61,9 +63,10 @@ li {
 }
 
 .mypics1 {
+  max-width: 100%;
   display: flex;
   float: left ;
-  padding-top: 70px;
+  padding-top: 74px;
   width: 700px;
   height: auto;
 }
@@ -102,7 +105,7 @@ li {
 .star5_rating{
     position: relative;
     z-index: 0;
-    display: inline-block;
+    display:inline-flex;
     white-space: nowrap;
     color: #CCCCCC; 
 }
@@ -112,6 +115,8 @@ li {
 }
 
 .star5_rating:after{ 
+  
+  display:inline-block;
   width: 20px;
   position: absolute;
   z-index: 1;
@@ -126,7 +131,7 @@ li {
 
 .star5_rating[data-rate="3"]:after{ width: 60%; }
 .star5_rating[data-rate="4"]:after{ width: 80%; } 
-
+.star5_rating[data-rate="5"]:after{ width: 100%; } 
 .inner {
   
   padding-top: 100px;
@@ -233,10 +238,13 @@ li {
   align-items: center;
   justify-content: center;
 }
-.insta_contact{
-  width: 23%;
+
+.contact_img{
+  float: left;
+  width: 120px;
 }
 .contact_list li {
+  display: inline-block;
   list-style: none;
 }
 .contact_item {
